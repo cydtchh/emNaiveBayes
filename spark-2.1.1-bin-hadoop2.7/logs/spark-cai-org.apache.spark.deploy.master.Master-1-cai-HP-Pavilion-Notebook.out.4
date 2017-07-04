@@ -1,0 +1,61 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /opt/spark/spark-2.1.1-bin-hadoop2.7/conf/:/opt/spark/spark-2.1.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host cai-HP-Pavilion-Notebook --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/06/14 09:37:06 INFO Master: Started daemon with process name: 3152@cai-HP-Pavilion-Notebook
+17/06/14 09:37:06 INFO SignalUtils: Registered signal handler for TERM
+17/06/14 09:37:06 INFO SignalUtils: Registered signal handler for HUP
+17/06/14 09:37:06 INFO SignalUtils: Registered signal handler for INT
+17/06/14 09:37:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/06/14 09:37:06 INFO SecurityManager: Changing view acls to: cai
+17/06/14 09:37:06 INFO SecurityManager: Changing modify acls to: cai
+17/06/14 09:37:06 INFO SecurityManager: Changing view acls groups to: 
+17/06/14 09:37:06 INFO SecurityManager: Changing modify acls groups to: 
+17/06/14 09:37:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(cai); groups with view permissions: Set(); users  with modify permissions: Set(cai); groups with modify permissions: Set()
+17/06/14 09:37:06 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+17/06/14 09:37:06 INFO Master: Starting Spark master at spark://cai-HP-Pavilion-Notebook:7077
+17/06/14 09:37:06 INFO Master: Running Spark version 2.1.1
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8080. Attempting port 8081.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8081. Attempting port 8082.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8082. Attempting port 8083.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8083. Attempting port 8084.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8084. Attempting port 8085.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8085. Attempting port 8086.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8086. Attempting port 8087.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8087. Attempting port 8088.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8088. Attempting port 8089.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8089. Attempting port 8090.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8090. Attempting port 8091.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8091. Attempting port 8092.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8092. Attempting port 8093.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8093. Attempting port 8094.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8094. Attempting port 8095.
+17/06/14 09:37:07 WARN Utils: Service 'MasterUI' could not bind on port 8095. Attempting port 8096.
+17/06/14 09:37:07 ERROR MasterWebUI: Failed to bind MasterWebUI
+java.net.BindException: Cannot assign requested address: Service 'MasterUI' failed after 16 retries (starting from 8080)! Consider explicitly setting the appropriate port for the service 'MasterUI' (for example spark.ui.port for SparkUI) to an available port or increasing spark.port.maxRetries.
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.spark_project.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.spark_project.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.spark_project.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.spark_project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.spark_project.jetty.server.Server.doStart(Server.java:366)
+	at org.spark_project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.apache.spark.ui.JettyUtils$.org$apache$spark$ui$JettyUtils$$connect$1(JettyUtils.scala:365)
+	at org.apache.spark.ui.JettyUtils$$anonfun$5.apply(JettyUtils.scala:375)
+	at org.apache.spark.ui.JettyUtils$$anonfun$5.apply(JettyUtils.scala:375)
+	at org.apache.spark.util.Utils$$anonfun$startServiceOnPort$1.apply$mcVI$sp(Utils.scala:2213)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:160)
+	at org.apache.spark.util.Utils$.startServiceOnPort(Utils.scala:2204)
+	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:375)
+	at org.apache.spark.ui.WebUI.bind(WebUI.scala:130)
+	at org.apache.spark.deploy.master.Master.onStart(Master.scala:132)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:122)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

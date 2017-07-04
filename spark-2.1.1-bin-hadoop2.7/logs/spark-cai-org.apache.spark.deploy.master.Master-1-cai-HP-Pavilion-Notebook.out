@@ -1,0 +1,48 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /opt/spark/spark-2.1.1-bin-hadoop2.7/conf/:/opt/spark/spark-2.1.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host cai-HP-Pavilion-Notebook --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/06/14 10:06:10 INFO Master: Started daemon with process name: 2677@cai-HP-Pavilion-Notebook
+17/06/14 10:06:10 INFO SignalUtils: Registered signal handler for TERM
+17/06/14 10:06:10 INFO SignalUtils: Registered signal handler for HUP
+17/06/14 10:06:10 INFO SignalUtils: Registered signal handler for INT
+17/06/14 10:06:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/06/14 10:06:11 INFO SecurityManager: Changing view acls to: cai
+17/06/14 10:06:11 INFO SecurityManager: Changing modify acls to: cai
+17/06/14 10:06:11 INFO SecurityManager: Changing view acls groups to: 
+17/06/14 10:06:11 INFO SecurityManager: Changing modify acls groups to: 
+17/06/14 10:06:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(cai); groups with view permissions: Set(); users  with modify permissions: Set(cai); groups with modify permissions: Set()
+17/06/14 10:06:11 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+17/06/14 10:06:11 INFO Master: Starting Spark master at spark://cai-HP-Pavilion-Notebook:7077
+17/06/14 10:06:11 INFO Master: Running Spark version 2.1.1
+17/06/14 10:06:11 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+17/06/14 10:06:11 INFO MasterWebUI: Bound MasterWebUI to 127.0.0.1, and started at http://127.0.0.1:8080
+17/06/14 10:06:11 INFO Utils: Successfully started service on port 6066.
+17/06/14 10:06:11 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/06/14 10:06:11 INFO Master: I have been elected leader! New state: ALIVE
+17/06/14 10:15:14 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@12002795[p=1,l=21,c=16384,r=20]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03AJ\xF5\xF7\xE1\xE9\x8c\xDb\x00\x00\x04\xF5>>>o-77x50px-hd.png ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:14 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@2ae8fd8d{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:15:22 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@1cb3556a[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03y\xA3\xF1ZeJ\xA9\xA1\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:22 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@188cc224{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:15:30 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@17df9ecd[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03g\xBd\xE6\n\x1a\t\x94x\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:30 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@7b721be5{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:15:38 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@718d1c38[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03}\x83Gn\x8d\xF9XB\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:38 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@51979ffc{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:15:46 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@17df9ecd[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03glb\xE1\x02\nyS\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:46 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@3ca938f3{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:15:54 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@718d1c38[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03T\x9e\x88\xB16z1\xC1\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:15:54 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@1931b386{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:16:02 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@17df9ecd[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03|(\x17\x94\x0c%2R\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:16:02 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@274530ad{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:16:48 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@718d1c38[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03J\xD3;\xCfk\xFb\xC6;\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:16:48 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@17f64ed0{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:17:34 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@718d1c38[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03o\x9bM@ \xCaY\xDf\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:17:34 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@45843738{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:18:20 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@5d8e5f51[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03J[\x9cY3\xD2U{\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:18:20 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@6a0773bd{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:19:06 WARN HttpParser: Illegal character 0x0 in state=START for buffer HeapByteBuffer@718d1c38[p=1,l=1290,c=16384,r=1289]={\x00<<<\x00\x00\x00\x00\x00\x05\n\x03A\\\x1d\xD7\xDf3\xD8\xA4\x00...\x00\xA8Et\x00\t127.0.0.1>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/06/14 10:19:06 WARN HttpParser: badMessage: 400 Illegal character 0x0 for HttpChannelOverHttp@6c196392{r=0,c=false,a=IDLE,uri=}
+17/06/14 10:19:41 INFO Master: Registering worker 127.0.0.1:32769 with 4 cores, 2.7 GB RAM
+17/06/14 10:21:54 INFO Master: 127.0.0.1:50072 got disassociated, removing it.
+17/06/14 10:21:54 INFO Master: 127.0.0.1:32769 got disassociated, removing it.
+17/06/14 10:21:54 INFO Master: Removing worker worker-20170614101940-127.0.0.1-32769 on 127.0.0.1:32769
+17/06/14 10:22:08 ERROR Master: RECEIVED SIGNAL TERM
